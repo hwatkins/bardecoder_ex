@@ -7,6 +7,10 @@ defmodule BardecoderEx.MixProject do
       version: "0.0.1",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
+      description: description(),
+      package: package(),
+      name: "bardecoder_ex",
+      source_url: "https://github.com/denvera/bardecoder_ex",
       deps: deps()
     ]
   end

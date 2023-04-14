@@ -73,10 +73,6 @@ fn detect_qr_codes(bytes: Binary) -> Result<Vec<Result<(MetaData, String), Strin
             let decoder = db.build();
             let decoded = decoder.decode(&img);
             let mut results = Vec::new();
-
-            for loc in &*locations.borrow() {
-                println!("Loca {:?}", loc);
-            }
             let mut i = 0;
             for result in decoded {
                 match result {

@@ -10,6 +10,6 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustler = "0.22.2"
-bardecoder = "0.3.0"
-image = "0.23"
+rustler = "0.27"
+bardecoder = "0.4"
+image = "0.24"

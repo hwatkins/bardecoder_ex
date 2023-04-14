@@ -4,7 +4,7 @@ defmodule BardecoderEx.MixProject do
   def project do
     [
       app: :bardecoder_ex,
-      version: "0.0.1",
+      version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       description: description(),
@@ -26,7 +26,7 @@ defmodule BardecoderEx.MixProject do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
-      {:rustler, "~> 0.22.0"}
+      {:rustler, "~> 0.27.0"}
     ]
   end
 
@@ -39,9 +39,9 @@ defmodule BardecoderEx.MixProject do
       # This option is only needed when you don't want to use the OTP application name
       name: "bardecoder_ex",
       licenses: ["MIT"],
-      files: ~w(lib .formatter.exs mix.exs README* native/bardecoder_ex_nif/Cargo* native/bardecoder_ex_nif/src),
+      files:
+        ~w(lib .formatter.exs mix.exs README* native/bardecoder_ex_nif/Cargo* native/bardecoder_ex_nif/src),
       links: %{"GitHub" => "https://github.com/denvera/bardecoder_ex"}
     ]
   end
-
 end

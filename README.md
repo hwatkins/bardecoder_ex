@@ -14,7 +14,7 @@ Add `bardecoder_ex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:bardecoder_ex, "~> 0.0.1"}
+    {:bardecoder_ex, "~> 0.1.0"}
   ]
 end
 ```
@@ -31,7 +31,8 @@ Detect and decode QR codes from a file supported by the Rust [image](https://cra
         __struct__: Bardecoder.Metadata,
         bounds: [{474, 674}, {569, 674}, {569, 770}, {474, 770}],
         ecc_level: 1,
-        version: 41
+        modules: 41,
+        version: 6
       },
       "The QR Code Content!"}
   ]}

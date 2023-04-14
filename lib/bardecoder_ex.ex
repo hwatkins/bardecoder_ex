@@ -45,7 +45,8 @@ defmodule BardecoderEx do
             __struct__: BardecoderEx.Metadata,
             bounds: [{474, 674}, {569, 674}, {569, 770}, {474, 770}],
             ecc_level: 1,
-            version: 41
+            modules: 41,
+            version: 6
           },
           "The contents of the QR code!"}
       ]}
